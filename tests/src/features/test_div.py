@@ -30,5 +30,10 @@ class TestDivFunction(unittest.TestCase):
         self.assertEqual(div(0, 10), 0)
         self.assertEqual(div(0, 2.5), 0)
 
+    # Testa divisão com zero como numerador
+    def test_div_wrong_params(self):
+        self.assertEqual(div(0, 'a'), None)
+       
+
 if __name__ == '__main__':
     unittest.main()
